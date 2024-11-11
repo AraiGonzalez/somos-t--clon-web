@@ -1,0 +1,32 @@
+# Tienda de Té
+
+Este es el sitio web de "Tienda de Té", una tienda dedicada a la venta de una amplia variedad de tés. En nuestro sitio web, puedes encontrar información sobre nuestros productos, tutoriales, franquicias y cómo trabajar con nosotros.
+
+Esta Tienda de TÉ ha sido desarrollada para la materia de Front End de la carrera de Desarrollo de Software en el Instituto IFTS 29. 
+## Integrantes del Proyecto
+Ayelen Caparra, Arai Gonzalez
+## Estructura del Proyecto
+
+El proyecto está organizado de la siguiente manera:
+
+## Páginas Principales
+
+- **index.html**: Página principal del sitio web.
+- **contacto.html**: Página de contacto.
+- **franquicias.html**: Información sobre nuestras franquicias.
+- **menu-tienda.html**: Nuestro menú de productos.
+- **nuestroTe.html**: Información sobre nuestros tés.
+- **trabaja-en-tdt.html**: Información sobre cómo trabajar con nosotros.
+- **tutoriales.html**: Tutoriales sobre cómo preparar nuestros tés.
+
+## Captura de Pantalla
+
+<img src="img/PAGINA.jpeg" alt="muestra">
+
+## Tecnologías Utilizadas
+
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+

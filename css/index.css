@@ -1,0 +1,443 @@
+*********************** General Styles ******************/
+
+
+/************************ Top Border *********************/
+.pagin-top {
+  height: 40px;
+  background-color: #262315;
+}
+
+/************************* Navbar ********************/
+.navbar-brand {
+  margin-left: 25px;
+}
+
+.container-fluid {
+  max-height: 100px;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0); /* Transparente */
+}
+.navbar-black {
+  background-color: black !important;
+}
+
+.navbar-brand, .nav-link {
+  color: #fff !important;
+  font-family: "Montserrat", "Helvetica";
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+nav a {
+  font-family: 'Montserrat',"Helvetica",  sans-serif;
+}
+.fondo{
+  background-color: #232323 !important;
+  margin-top: 0px;
+}
+
+
+/************************* Navbar Scroll ************************/
+.navbar-scroll {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #232323;
+  display: none; 
+  animation: slideDown 1s ease-out; 
+}
+
+.navbar-scroll .navbar-brand, .navbar-scroll .nav-link {
+  color: white !important;
+}
+
+/************************ Carousel *****************************/
+.carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+/************************* Section Titles **************************/
+.section-title, h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 900; 
+  position: relative; 
+  margin-bottom: 20px;
+}
+
+.section-title::after, h3::after {
+  content: '';
+  display: block;
+  width: 50px; 
+  height: 3px; 
+  background-color: #4A4A4A; 
+  margin: 10px auto 0;
+}
+
+/****************************** Galleria de productos *****************************/
+.gallery-container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.gallery {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery img {
+  width: calc((100% - 80px) / 5); 
+  margin-right: 20px;
+}
+
+button.prev, button.next {
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+button.prev {
+  left: 10px; 
+}
+
+button.next {
+  right: 10px; 
+}
+
+.padre {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 40vh;
+}
+
+/************************ galeria de dos fotos *********************************/
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 361px; 
+  max-width: 654px; 
+  transition: transform 0.5s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.1); 
+}
+.img-fluid{
+  width: 753px;
+  max-width: 755px;
+  height: 623px;
+  max-height: 623px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 10%; 
+  left: 10%;
+  transform: translateY(0); 
+  text-align: left; 
+  color: white;
+}
+
+.small-text {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.small-text-pick1 {
+  background-color: silver;
+  font-size: 14px; 
+}
+
+.large-text {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.btn-custom {
+  margin-left: 0;
+  background-color: #B3C4A1;
+}
+
+/***************** Estilos para la sección de tipos de té ***************/
+.small {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 5px;
+  color: #800020;
+}
+
+.large {
+  font-size: 46px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text-section {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  text-align: start;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.row {
+ margin: 0px;
+ padding: 0px;
+}
+
+
+.text-section .title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #800020;
+  font-family: 'Cormorant Garamond', serif;
+  
+  
+}
+
+.text-section .description {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.general {
+  background-color: #eeede9;
+  max-width: 100%;
+  padding-bottom: 60px; 
+  padding-top: 20px;
+}
+
+/************ Estilos para la imagen de fondo y el texto ***************/
+.full-width-image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  
+}
+
+.full-width-image {
+  width: 100%;
+  height: auto;
+  opacity: 0.5; 
+  max-width: 100%;
+
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.overlay-text .medium-text {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.overlay-text .large-text {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.overlay-text .small-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.overlay-text .btn-custom {
+ 
+  background-color: #4a4a4a;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+}
+
+/****************** Footer *******************/
+.footer-container {
+  background-color: #232323;
+  padding: 30px 0;
+  position: relative;
+}
+
+.footer-column {
+  padding: 10px;
+}
+
+.footer-column img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.logo-container {
+  margin-left: -160px; 
+}
+
+.footer-column ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column span, 
+.footer-column p {
+  color: #B3C4A1;
+  font-size: 16px;
+  font-family: inherit;
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: gray;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.form-group input {
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #B3C4A1;
+  border: none;
+  color: white;
+  height: 100%; 
+  border-radius: 0; 
+}
+
+.min-footer {
+  border-top: 1px solid gray;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.min-footer small {
+  color: #F5F0E6;
+}
+
+.form-group,
+.form-group input,
+.btn-primary {
+  color: black;
+  height: 38px; 
+  border-radius: 0%;
+  font-size: inherit;
+  --bs-btn-bg: #c7a17a;
+  --bs-btn-hover-bg: #e4af7b;
+  --bs-btn-active-bg: #e4af7b;
+  --bs-btn-active-color: #020202;
+  --bs-btn-hover-color: #000000;
+}
+
+/******* Text Center *******/
+.text-center {
+  margin-top: 9px;
+}
+
+/******* Social Icons *******/
+.woodmart-social-icon i {
+  background-color: rgba(255, 255, 255, .3);
+  border-radius: 45%;
+  padding: 7px;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.woodmart-social-icon:hover i {
+  background-color: #c7a17a;
+  color: white;
+}
+
+/******* Media Query para pantallas pequeñas Para alinear los textos de la seccion tipos de te*******/
+@media (max-width: 768px) {
+  .side-text-left .title {
+    text-align: left; 
+  }
+
+  .side-text-left .description {
+    text-align: left; 
+  }
+
+  .side-text .title {
+    text-align: left; 
+  }
+
+  .side-text .description {
+    text-align: left; 
+  }
+}
+/* cards nuestro te */
+.cardss {
+  padding-top: 80px; 
+}
+.card {
+  --bs-card-border-width: 0; 
+}
+
+
+
+/* FORMULARIO TTDT */
+.form-title {
+  font-size: 1.5rem; /* Tamaño mediano */
+  font-weight: bold; /* Negrita */
+}
+
+.form-subtitle {
+  font-size: 16px; 
+  margin-bottom: 1rem; 
+  line-height: 20px;
+  color:  #800020;
+   
+}
+
+.form-section {
+  margin-bottom: 1.5rem; /* Espacio entre secciones */
+}
+
+.form-control {
+  width: 100%; /* Ancho completo */
+}
+
+
+.formm{
+  padding-top: 80px;
+}
+#contenedor-de-mockups{
+margin-top: 100px;
+}

@@ -1,0 +1,337 @@
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/************************ Top Border *********************/
+.pagin-top {
+    height: 40px;
+    background-color: #232323;
+  }
+  
+  /************************* Navbar ********************/
+  .navbar-brand {
+    margin-left: 25px;
+  }
+  
+  .container-fluid {
+    max-height: 100px;
+  }
+  
+  .navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    background-color: #232323; /* Transparente */
+  }
+  .navbar-black {
+    background-color: black !important;
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #fff !important;
+    font-family: "Montserrat", "Helvetica";
+    text-shadow: 1px 1px 2px #262315;
+  }
+  
+  nav a {
+    font-family: 'Montserrat',"Helvetica",  sans-serif;
+  }
+  .fondo{
+    background-color: #232323 !important;
+    margin-top: 0px;
+  }
+  
+  
+  /************************* Navbar Scroll ************************/
+  .navbar-scroll {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #232323;
+    display: none; 
+    animation: slideDown 1s ease-out; 
+  }
+  
+  .navbar-scroll .navbar-brand, .navbar-scroll .nav-link {
+    color: white !important;
+  }
+  
+/*************************/
+.contenedor-principal-article {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 50vw;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.seccion-contacto {
+    width: 712px; /* 10px más grande que la sección original */
+    height: 660px; /* 10px más grande que la sección original */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    margin: 0 auto;
+    border-right: 1px solid rgba(129, 129, 129, 0.2);
+    padding-right: 10px;
+}
+
+.seccion-redes-sociales {
+    width: 712px; /* 10px más grande que la sección original */
+    height: 810px; /* 10px más grande que la sección original */
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.etiqueta {
+    font-weight: bold;
+}
+
+.input-form {
+    width: 695px;
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+textarea.input-form {
+    height: 120px;
+    resize: none;
+}
+
+.boton-enviar {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #A6761D;
+    color: white;
+    border: none;
+    border-radius: 0;
+}
+
+.boton-enviar:hover {
+    background-color: #fff;
+    color: #A6761D;
+    border: 2px solid;
+    border-color: #A6761D;
+}
+
+.subtitulo-redes-sociales {
+    margin-top: 90px;
+}
+
+.titulo-con-linea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.linea-derecha {
+    display: block;
+    flex: 1 1 auto;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.2);
+    max-width: 450px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+
+.titulo-seccion {
+    font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icono-social {
+    font-size: 24px;
+    color: #333;
+    margin: 10px;
+}
+
+.icono-social:hover {
+    color: #A6761D;
+}
+
+/* Tablet horizontal (max-width: 1080px) */
+@media (max-width: 1080px) {
+    .contenedor-principal-article {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+    .seccion-contacto{
+        margin-top: 150px;
+    }
+
+    .seccion-contacto, .seccion-redes-sociales {
+        width: 600px;
+        padding-right: 5px;
+        height: auto;
+    }
+
+    .input-form {
+        width: 570px;
+    }
+
+    .boton-enviar {
+        width: 90px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .titulo-seccion {
+        font-size: 17px;
+    }
+
+    .icono-social {
+        font-size: 22px;
+    }
+}
+
+/* Tablet vertical (max-width: 768px) */
+@media (max-width: 768px) {
+    .contenedor-principal-article {
+        padding: 20px;
+    }
+    .seccion-contacto{
+        margin-top: 100px;
+    }
+
+    .seccion-contacto, .seccion-redes-sociales {
+        width: 90%;
+        padding-right: 0;
+    }
+
+    .input-form {
+        width: 100%;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .boton-enviar {
+        width: 80px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .titulo-seccion {
+        font-size: 16px;
+    }
+
+    .icono-social {
+        font-size: 20px;
+    }
+}
+
+/* Móvil 1 (max-width: 480px) */
+@media (max-width: 480px) {
+    .navbar-brand{
+        margin-top: -25px;
+    }
+    .contenedor-principal-article {
+        padding: 15px;
+    }
+
+    .seccion-contacto, .seccion-redes-sociales {
+        width: 100%;
+        height: auto;
+    }
+
+    .seccion-contacto{
+        margin-top: 150px;
+    }
+
+    .seccion-redes-sociales{
+        margin-top: 30px;
+    }
+
+    .titulo-con-linea {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .linea-derecha {
+        max-width: 100%;
+        margin-top: 8px;
+        margin-left: 5px;
+    }
+
+    .input-form {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .boton-enviar {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .titulo-seccion {
+        font-size: 15px;
+    }
+
+    .icono-social {
+        font-size: 18px;
+    }
+}
+
+/* Móvil 2 (max-width: 375px) */
+@media (max-width: 375px) {
+    .navbar-brand{
+        margin-top: -25px;
+    }
+    .contenedor-principal-article {
+        padding: 10px;
+    }
+    .seccion-contacto{
+        margin-top: 120px;
+    }
+
+
+    .seccion-contacto, .seccion-redes-sociales {
+        width: 100%;
+    }
+
+    .titulo-con-linea {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .input-form {
+        width: 100%;
+        font-size: 13px;
+        height: 35px;
+    }
+
+    .boton-enviar {
+        width: 100%;
+        font-size: 13px;
+        padding: 8px 15px;
+    }
+
+    .titulo-seccion {
+        font-size: 14px;
+    }
+
+    .icono-social {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,77 @@
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/************************ Top Border *********************/
+.pagin-top {
+    height: 40px;
+    background-color: #232323;
+  }
+  
+  /************************* Navbar ********************/
+  .navbar-brand {
+    margin-left: 25px;
+  }
+  
+  .container-fluid {
+    max-height: 100px;
+  }
+  
+  .navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    background-color: #232323; /* Transparente */
+  }
+  .navbar-black {
+    background-color: black !important;
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #fff !important;
+    font-family: "Montserrat", "Helvetica";
+    text-shadow: 1px 1px 2px #262315;
+  }
+  
+  nav a {
+    font-family: 'Montserrat',"Helvetica",  sans-serif;
+  }
+  .fondo{
+    background-color: #232323 !important;
+    margin-top: 0px;
+  }
+  
+  
+  /************************* Navbar Scroll ************************/
+  .navbar-scroll {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #232323;
+    display: none; 
+    animation: slideDown 1s ease-out; 
+  }
+  
+  .navbar-scroll .navbar-brand, .navbar-scroll .nav-link {
+    color: white !important;
+  }
+  
+/*************************/
+
+/* Móvil 1 (max-width: 480px) */
+@media (max-width: 480px) {
+    .navbar-brand{
+        margin-top: -25px;
+    }
+   
+}
+
+/* Móvil 2 (max-width: 375px) */
+@media (max-width: 375px) {
+    .navbar-brand{
+        margin-top: -25px;
+    }
+    
+}

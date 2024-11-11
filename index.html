@@ -1,1 +1,308 @@
-<h1/> index </h1>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Somos Te</title>
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+  <!-- Vincula Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+ 
+</head>
+
+<body>
+  <header>
+    <!--borde superior-->
+    <div class="pagin-top"></div>
+    <!-- Barra de Navegación Transparente -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <!-- Logo en el borde izquierdo -->
+        <a class="navbar-brand" href="#">
+          <img src="img/3.png" alt="Logo"
+            style="max-width: 160px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- PRIMER Menú NAV -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="nuestroTe.html">NUESTRO TÉ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tutoriales.html">TUTORIALES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu-tienda.html">NUESTRO MENÚ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="trabaja-en-tdt.html">TRABAJÁ CON NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="franquicias.html">FRANQUICIAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Segundo NAV que Aparece al hacer Scroll -->
+    <nav class="navbar-scroll navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <!-- Logo en el borde izquierdo -->
+        <a class="navbar-brand" href="#">
+          <img src="img/3.png" alt="Logo"
+            style="max-width: 160px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Segundo Menú del NAV -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="nuestroTe.html">NUESTRO TÉ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tutoriales.html">TUTORIALES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu-tienda.html">NUESTRO MENÚ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="trabaja-en-tdt.html">TRABAJÁ CON NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="franquicias.html">FRANQUICIAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carrusel del HEADER-->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/carrousel3.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/carrousel2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/carrousel1.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <!--Seccion de productos-->
+  <div class="container mt-5"><!--contenedor padre-->
+    <div class="row">
+      <div class="col-12">
+          <h3 class="text-center section-title">NUESTROS PRODUCTOS</h3>
+      </div>
+  </div>
+  <div class="padre">
+  <div class="gallery-container">
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <div class="gallery">
+        <img src="img/somos té mock-ups 1.png" alt="Producto 1">
+        <img src="img/somos té mock-ups 2.png" alt="Producto 1">
+        <img src="img/somos té mock-ups 3.png" alt="Producto 1">
+        <img src="img/somos té mock-ups 4.png" alt="Producto 1">
+        <img src="img/somos té mock-ups 5.png" alt="Producto 1">
+        <img src="img/somos té mock-ups 6.png" alt="Producto 1">
+        <img src="img/somos té mock-ups 7.png" alt="Producto 1">
+        <img src="img/somos té mock-ups 8.png" alt="Producto 1">
+        <img src="img/somos té mock-ups 9.png" alt="Producto 1">
+        <img src="img/somos té mock-ups 10.png" alt="Producto 1">
+
+    </div>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+</div>
+</div>
+ <!-- Sección de dos imágenes -->
+ <div class="container mt-5">
+  <div class="row">
+      <div class="col-md-6 mb-4">
+          <div class="image-container">
+            <img src="img/12.png" alt="Imagen 2" class="img-fluid">
+            <div class="overlay">
+                  <p class="small-text pick1">Aprendé a hacer tu té como un experto</p>
+                  <h3 class="large-text">Secretos de un té de calidad</h3>
+                  <a href="#" class="btn btn-custom">Ver</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6 mb-4">
+          <div class="image-container">
+              <img src="img/18 (1).png" alt="Imagen 2" class="img-fluid">
+              <div class="overlay">
+                  <p class="small-text pick1">Conocé todo lo que podés encontrar en nuestros locales</p>
+                  <h3 class="large-text">Conocé nuestros locales</h3>
+                  <a href="#" class="btn btn-custom">Ver</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+    
+    
+<!-- sección De TIPOS DE TE -->
+<div class="container general mt-5">
+  <div class="row text-center">
+      <div class="col-12">
+          <p class="small large">NUESTRO TÉ</p>
+          <h3 class=" text-center section-title">¿Qué vas a elegir hoy?</h3>
+      </div>
+
+  </div>
+  <div class="row align-items-center" id="contenedor-tipos-de-te">
+      <div class="col-md-3 side-text-left ">
+          <div class="text-section">
+              <h4 class="title">INFUSIÓN DE HIERBAS PATAGÓNICAS</h4>
+              <p class="description">Inspirada en la Patagonia, esta mezcla de menta, cedrón y tomillo ofrece una experiencia refrescante y digestiva, perfecta para después de las comidas y para quienes buscan algo auténtico y local.</p>
+          </div>
+          <div class="text-section">
+              <h4 class="title">TÉ VERDE SENCHA</h4>
+              <p class="description">Un clásico japonés con sabor vegetal y ligeramente dulce, el té verde Sencha es rico en antioxidantes y perfecto para revitalizar y relajar al mismo tiempo.</p>
+          </div>
+          <div class="text-section">
+              <h4 class="title">TÉ NEGRO EARL GREY</h4>
+              <p class="description">Una mezcla sofisticada de té negro y bergamota, con un sabor cítrico y fuerte. Ideal para tardes de invierno o para acompañar pastelería argentina.</p>
+          </div>
+      </div>
+      <div class="col-md-6 text-center">
+          <img src="img/19.png" alt="Imagen central" class="img-fluid">
+      </div>
+      <div class="col-md-3 side-text ">
+          <div class="text-section">
+              <h4 class="title">TÉ DE ROSA MOSQUETA Y HIBISCO</h4>
+              <p class="description">Una infusión vibrante y llena de vida con pétalos de rosa mosqueta y flores de hibisco. Frutal, ligeramente ácida y rica en vitamina C, ideal para disfrutar tanto fría en verano como caliente en invierno.</p>
+          </div>
+          <div class="text-section">
+              <h4 class="title">TÉ ROOIBOS CON VAINILLA</h4>
+               <p class="description"> Dulce y sin cafeína, este rooibos sudafricano con un toque de vainilla es perfecto para una bebida suave y relajante, ideal para las noches o para compartir en familia.</p>
+          </div>
+          <div class="text-section">
+              <h4 class="title">TÉ VERDE MATCHA LATTE</h4>
+         <p class="description">El matcha japonés en polvo ofrece un sabor vegetal y cremoso, ideal para lattes o mezclado con leche vegetal. Rico en antioxidantes y energía natural, perfecto para quienes buscan un toque saludable en su día.</p>
+            </div>
+      </div>
+  </div>
+</div>
+     
+
+  <!-- sección con imagen de fondo y texto -->
+  <div class="full-width-image-container">
+    <img src="img/15.png" alt="Imagen de fondo" class="img-fluid full-width-image">
+    <div class="overlay-text">
+        <p class="medium-text">SIEMPRE HAY UNA</p>
+        <h2 class="large-text">TIENDA SOMOS TÉ CERCA TUYO</h2>
+        <p class="small-text">Encontrá la sucursal más cercana</p>
+        <a href="#" class="btn  btn-custom">INGRESAR</a>
+    </div>
+</div>
+
+   <!-- FOOTER -->
+   <footer class="footer-container">
+    <div class="container main-footer">
+      <aside class="footer-sidebar row" role="complementary">
+        <!-- Columna 1: Logo -->
+        <div class="footer-column col-12">
+          <div class="row">
+            <div
+              class="col-sm-4 col-lg-4 col-md-4 col-xs-12 d-flex align-items-center justify-content-start logo-container">
+              <img src="img/3.png" width="160px"
+                height="160px" alt="somos-te" title="somos-te" />
+            </div>
+            <!-- Columna 2: Contenidos -->
+            <div class="col-sm-2 col-lg-2 col-md-2 col-xs-6">
+              <ul class="list-unstyled">
+                <li><span>Contenidos</span></li>
+                <li><a href="index.html" title="">Inicio</a></li>
+                <li><a href="nuestroTe.html" title="">Nuestro Té</a></li>
+                <li><a href="menu-tienda.html" title="">Nuestro menú</a></li>
+              </ul>
+            </div>
+            <!-- Columna 3: Necesitás Ayuda -->
+            <div class="col-sm-2 col-lg-2 col-md-2 col-xs-6">
+              <ul class="list-unstyled">
+                <li><span>Necesitás Ayuda</span></li>
+                <li><a href="tutoriales.html" title="">Tutoriales</a></li>
+                <li><a href="trabaja-en-tdt.html" title="">Trabajá en TDC</a></li>
+                <li><a href="franquicias.html" title="">Franquicias</a></li>
+                <li><a href="contacto.html" title="">Contacto</a></li>
+              </ul>
+            </div>
+            <!-- Columna 4: Newsletter y Redes Sociales -->
+            <div class="col-sm-4 col-lg-4 col-md-4 col-xs-12">
+              <p class="text-center">SUSCRIBITE A NUESTRO NEWSLETTER</p>
+              <form action="/#wpcf7-f435-o1" method="post" novalidate="novalidate" class="d-flex align-items-center">
+                <div class="form-group flex-grow-1 mb-0">
+                  <input id="email" size="40" maxlength="400" class="form-control" type="email" name="your-email"
+                    placeholder="Tu email" required />
+                </div>
+                <button type="submit" class="btn btn-primary">SUSCRIBIRME</button>
+              </form>
+              <p class="text-center">CONECTATE CON NOSOTROS</p>
+              <div
+                class="woodmart-social-icons text-center icons-design-simple icons-size-small color-scheme-light social-follow social-form-circle">
+                <a rel="nofollow" href="https://www.facebook.com/Tiendadecafe" target="_blank"
+                  class="woodmart-social-icon social-facebook"><i class="fab fa-facebook-f"></i></a>
+                <a rel="nofollow" href="https://www.instagram.com/tiendadecafear/" target="_blank"
+                  class="woodmart-social-icon social-instagram"><i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside><!-- .footer-sidebar MINI FOOTER -->
+    </div>
+    <div class="container">
+      <div class="min-footer">
+        <div>
+          <small>
+            © Copyright 2021 Tienda de Té - Todos los derechos reservados.
+            <br>
+            Todos los logos, productos, marcas y nombres aqui utilizados son propiedad registrada.
+          </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Vincula Bootstrap JavaScript y agrega un script para manejar el scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

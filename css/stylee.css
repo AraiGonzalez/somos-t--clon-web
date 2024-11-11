@@ -1,0 +1,257 @@
+/*  márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.7s;
+  z-index: 10;
+}
+
+header.abajo {
+  background-color: #000;
+  padding: 15px 20px;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+}
+
+nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  font-family: helvetica;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff; 
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 0.7s;
+}
+
+/* Estilos del carrusel */
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  width: 100%;
+  display: block;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+/* Estilos del footer */
+.footer-container {
+  background-color: #111111;
+  padding: 30px 0;
+  color: #c7a17a;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap;
+}
+
+.footer-sidebar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.footer-column {
+  flex: 1;
+  padding: 2px;
+  max-width: 200px; /* Limita el ancho máximo de cada columna */
+  text-align: center; /* Centra el contenido de cada columna */
+  justify-content: flex-start;
+}
+
+.footer-columnlogo {
+  position: relative;
+  left: -100px; /* Alinea el logo a la izquierda */
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-column a {
+  color: gray;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-columnform {
+  flex: 1;
+  padding: 2px;
+  max-width: 300px; /* Limita el ancho máximo de cada columna */
+  text-align: center;  
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el formulario */
+  margin: 15px 0; /* Agrega margen superior e inferior */
+}
+
+.newsletter-form input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #c7a17a;
+  border-radius: 0;
+  max-width: 150px;
+}
+
+.newsletter-form .btn-primary {
+  background-color: #c7a17a;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.woodmart-social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.woodmart-social-icon {
+  margin: 0 5px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.woodmart-social-icon:hover {
+  background-color: #c7a17a;
+  color: white;
+}
+
+.min-footer {
+  border-top: 1px solid gray;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.min-footer small {
+  color: gray;
+}
+
+/* Media queries para hacer el diseño responsivo */
+
+/* Tablet horizontal */
+@media (max-width: 1080px) {
+  header {
+    flex-direction: column; 
+  }
+  .carousel {
+    height: 300px; 
+  }
+}
+
+/* Tablet vertical */
+@media (max-width: 768px) {
+  header ul {
+    flex-direction: column; 
+  }
+}
+
+/* Móvil 1 */
+@media (max-width: 480px) {
+  .footer-container {
+    flex-direction: column; 
+  }
+}
+
+/* Móvil 2 */
+@media (max-width: 375px) {
+  .newsletter-form {
+    flex-direction: column; 
+  }
+}

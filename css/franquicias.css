@@ -1,0 +1,303 @@
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/************************ Top Border *********************/
+.pagin-top {
+    height: 40px;
+    background-color: #232323;
+  }
+  
+  /************************* Navbar ********************/
+  .navbar-brand {
+    margin-left: 25px;
+  }
+  
+  .container-fluid {
+    max-height: 100px;
+  }
+  
+  .navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    background-color: #232323; /* Transparente */
+  }
+  .navbar-black {
+    background-color: black !important;
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #fff !important;
+    font-family: "Montserrat", "Helvetica";
+    text-shadow: 1px 1px 2px #262315;
+  }
+  
+  nav a {
+    font-family: 'Montserrat',"Helvetica",  sans-serif;
+  }
+  .fondo{
+    background-color: #232323 !important;
+    margin-top: 0px;
+  }
+  
+  
+  /************************* Navbar Scroll ************************/
+  .navbar-scroll {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #232323;
+    display: none; 
+    animation: slideDown 1s ease-out; 
+  }
+  
+  .navbar-scroll .navbar-brand, .navbar-scroll .nav-link {
+    color: white !important;
+  }
+  
+/*************************/
+.seccion-principal {
+    margin-top: 130px;
+    padding-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-opciones,
+.titulo-franquicia,
+.texto-invitacion {
+    margin: 10px 0;
+    text-align: center;
+}
+.texto-opciones{
+    color: #A6761D;
+}
+.titulo-franquicia {
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.titulo-franquicia::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background-color: #A6761D;
+}
+.texto-invitacion{
+    font-size: 16px;
+    color: #808080;
+    font-family: "Montserrat", "Helvetica Now";
+}
+
+.formulario {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    justify-items: start;
+    margin: 1px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+}
+
+.etiqueta {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: "Montserrat", "Helvetica Now";
+}
+
+.entrada {
+    width: 590px;
+    height: 42px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.boton-enviar {
+    grid-column: 1; /* Coloca el botón en la primera columna */
+    width: 100px;
+    height: 42px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #A6761D;
+    color: white;
+    border: none;
+}
+
+
+.boton-enviar:hover {
+    background-color: #fff;
+    color: #A6761D;
+    border: 2px solid;
+    border-color: #A6761D;
+}
+
+@media(max-width: 1280px){
+    .formulario {
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+
+    .entrada {
+        width: 100%;
+    }
+
+    .boton-enviar {
+        width: 80px;
+        height: 38px;
+        font-size: 15px;
+    }
+    .texto-invitacion{
+        text-align: center;
+    }
+
+    .titulo-franquicia {
+        font-size: 22px;
+    }
+}
+
+/* Tablet horizontal (max-width: 1080px) */
+@media (max-width: 1080px) {
+    .formulario {
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+
+    .entrada {
+        width: 100%;
+    }
+
+    .boton-enviar {
+        width: 80px;
+        height: 38px;
+        font-size: 15px;
+    }
+    .texto-invitacion{
+        text-align: center;
+    }
+
+    .titulo-franquicia {
+        font-size: 22px;
+    }
+}
+
+/* Tablet vertical (max-width: 768px) */
+@media (max-width: 768px) {
+    .seccion-principal {
+        padding: 20px;
+    }
+
+    .texto-invitacion{
+        text-align: center;
+    }
+
+    .formulario {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .entrada {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .boton-enviar {
+        width: 70px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .titulo-franquicia {
+        font-size: 20px;
+    }
+}
+
+/* Móvil 1 (max-width: 480px) */
+@media (max-width: 480px) {
+    .navbar-brand{
+        margin-top: -25px;
+    }
+    .seccion-principal {
+        padding: 15px;
+    }
+
+    .texto-opciones,
+    .titulo-franquicia,
+    .texto-invitacion {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .formulario {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .entrada {
+        width: 100%;
+        font-size: 14px;
+        height: 38px;
+    }
+
+    .boton-enviar {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .titulo-franquicia {
+        font-size: 18px;
+    }
+}
+
+/* Móvil 2 (max-width: 375px) */
+@media (max-width: 375px) {
+    .navbar-brand{
+        margin-top: -25px;
+    }
+    .seccion-principal {
+        padding: 10px;
+    }
+
+    .formulario {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .entrada {
+        width: 100%;
+        font-size: 13px;
+        height: 35px;
+    }
+
+    .boton-enviar {
+        width: 100%;
+        font-size: 13px;
+        padding: 8px 15px;
+    }
+
+    .titulo-franquicia {
+        font-size: 16px;
+    }
+}
